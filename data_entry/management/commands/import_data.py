@@ -7,7 +7,7 @@ import csv
 class Command(BaseCommand):
     help = 'Use To Import CSV Dataset.'
 
-
+    #  command: python manage.py import_data file_pass model_name
     def add_arguments(self, parser):
         parser.add_argument('file_path', type=str, help='Path To The CSV File.')
         parser.add_argument('model_name', type=str, help='Name Of The Model To Import Data To.')
